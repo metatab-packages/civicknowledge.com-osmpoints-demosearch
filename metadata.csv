@@ -1,6 +1,6 @@
 Declare,metatab-latest
-Title,
-Description,
+Title,Points for Businesses and Attractions
+Description,"Points for businesses and attractions, from OSM, aggregated to approx 300m."
 Identifier,aac08558-efb2-4013-9d06-6a7faa682d7a
 Name,civicknowledge.com-osmpoints-demosearch-1.1.1
 Dataset,osmpoints
@@ -14,17 +14,34 @@ Version.Major,1
 Version.Minor,1
 Version.Patch,1
 Created,2021-05-11T19:17:38
-Modified,2021-05-11T19:17:40
+Modified,2021-05-12T20:58:24
 Giturl,https://github.com/CivicKnowledge/radius-collection
 ""
-Section,Contacts,Email,Organization,Url
-Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com
+Section,Contacts,Email,Organization,Url,
+Wrangler,Eric Busboom,eric@civicknowledge.com,Civic Knowledge,http://civicknowledge.com,
 ""
-Section,Documentation,Title,Description,
-Documentation,file:README.md,README,,
+Section,Documentation,Title,Description,,
+Documentation,file:README.md,README,,,
 ""
-Section,References,Name,Description,
+Section,References,Name,Description,,
+Reference,index:civicknowledge.com-osm-demosearch#point_tags,points,OSM Points,,
+Reference,index:civicknowledge.com-mgrs#utm_bands_buffered,utm_bands_buffered,Buffered UTM bands,,
 ""
-Section,Resources,Name,Description,
+Section,Resources,Name,Description,,
+Datafile,notebooks/Extract.ipynb#points,points,"OSM points for bars, cafes, parks and other tags",,
 ""
-Section,Schema,DataType,AltName,Description
+Section,Schema,DataType,AltName,Description,Has_Codes
+Table,points,,,,
+Table.Column,band,integer,,,
+Table.Column,geometry,string,,,
+Table.Column,amenity,integer,,,
+Table.Column,cafe,integer,,,
+Table.Column,restaurant,integer,,,
+Table.Column,bar,integer,,,
+Table.Column,entertain,integer,,,
+Table.Column,casual,integer,,,
+Table.Column,food,integer,,,
+Table.Column,shop,integer,,,
+Table.Column,active,integer,,,
+Table.Column,playpark,integer,,,
+Table.Column,travel,integer,,,
